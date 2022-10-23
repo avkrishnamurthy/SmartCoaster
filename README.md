@@ -1,4 +1,5 @@
 # Smart Coaster // Hack Duke
+Ajay Krishnamurthy, Anthony Fernando, Patrick Hardison, Ryan D'Cunha, Shaan Narayan
 
 According to the NIH, 75% of Americans are chronically dehydrated. Our smart coaster promotes hydration by alerting users to drink water via text message and LEDs throughout the workday. 
  
