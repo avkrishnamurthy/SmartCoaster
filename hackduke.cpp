@@ -1,6 +1,6 @@
 #define NOTIF_FREQ 0.5
 #define SAMPLE_FREQ 10
-#define SAMPLING_WINDOW 100
+#define SAMPLING_WINDOW 1000
 #define MIN_BOTTLE_WEIGHT 20
 #define MOVING_AVERAGE_WINDOW 50
 
@@ -42,15 +42,23 @@ void setup() {
     start_time_millis = millis();
     init_sample = false;
     waiting_for_place = false;
-    max_sample = 0;
-    average_sample = -1;
+    max_sample = -1;
+    average_sample = 0;
     led_on = false;
-    total_amt_to_drink = 1000;
+    total_amt_drank = 0;
+    amt_drank_in_period = 0;
     skip = false;
 }
 
 //Loop
 void loop(){
+    Serial.print("Max Sample:");
+    Serial.println(max_sample);
+    Serial.print("Avg Sample:");
+    Serial.println(average_sample);
+    Serial.print("Diff:");
+    Serial.println(max_sample-average_sample);
+    
     //If we shouldnt send a notification, sample the sensor data
     if(current_time_millis-start_time_millis <= NOTIF_FREQ * 60 * 1000){
         //State machine for sampling
@@ -96,6 +104,7 @@ void loop(){
             skip = true;
             Serial.println("Waiting for bottle");
             delay(10);
+            led_on = false;
         }
         Serial.println(skip);
         if(!skip){
@@ -108,7 +117,7 @@ void loop(){
                 led_on = true;
             }
             else{
-                Serial.println("No notification")
+                Serial.println("No notification");
                 led_on = false;
             }
             //Update fields
