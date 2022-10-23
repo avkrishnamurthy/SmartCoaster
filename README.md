@@ -24,5 +24,6 @@ During the 24 hours, we had to troubleshoot many steps during the iterative desi
 ## What's next for Smart Coaster
 The next steps for Smart Coaster include improving the precision, durability, and user interface of our product. Instead of using an FSR to measure the weight of the bottle, we hope to implement a load cell sensor that can better measure the amount of water still left in the bottle. We also hope to improve our system's waterproofing capabilities to better protect the electronics in our device. Lastly, we would like to improve the user customizability of the Smart Coaster by having the user enter their height, weight, gender, and other information to better inform the water calibration curve. We also want to implement an interface so users can see their water drinking statistics over some time.
 
-##Demo
+## Demo
+Click to watch
 [![Watch the video](https://img.youtube.com/vi/L-6ZjFuQa9M/maxresdefault.jpg)](https://youtu.be/L-6ZjFuQa9M)
