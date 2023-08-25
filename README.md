@@ -27,3 +27,10 @@ The next steps for Smart Coaster include improving the precision, durability, an
 ## Demo
 Click to watch
 [![Watch the video](https://img.youtube.com/vi/L-6ZjFuQa9M/maxresdefault.jpg)](https://youtu.be/L-6ZjFuQa9M)
+
+
+## Technologies
+
+<img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
+<img src="https://img.shields.io/badge/twilio-%23F22F46.svg?&style=for-the-badge&logo=twilio&logoColor=white" />
+
